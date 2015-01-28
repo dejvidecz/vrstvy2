@@ -1,0 +1,17 @@
+
+{block content}
+<div id="banner">
+	<h1 n:block=title>Stránky</h1>
+</div>
+{foreach $pages as $p}
+    <a href="{link detail $p->getId()}">{$p->getId()}</a>
+    {$p->getId()} <br>
+    {$p->getName()} <br>
+    {$p->getLink()} <br>
+    <br>
+    
+{/foreach}
+Toto je admin page modulu
+{/block}
+
+
