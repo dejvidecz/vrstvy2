@@ -25,6 +25,8 @@ interface IPageMapper {
      * @return ArrayObject Description
      */
     public function findAll();
+    
+    public function findAllArray();
    
     /**
      * Uloží a vrátí uloženou entitu

@@ -36,5 +36,9 @@ class PageDAO implements IPageDAO {
     public function save(PageEntity $page) {
         return $this->mapper->save($page);
     }
-
+    
+     public function findAllArray() {
+        return $this->mapper->findAllArray();
+        
+    }
 }

@@ -21,7 +21,7 @@ class PageService extends \Nette\Object {
 
     /**
      * 
-     * @return PageDAO
+     * @return \App\PageModule\model\dao\PageDAO
      */
     function getDao() {
         return $this->dao;

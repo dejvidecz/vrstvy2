@@ -1,0 +1,43 @@
+{* This is the welcome page, you can delete it *}
+
+{block content}
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Přidání uživatele</h1>
+    </div>
+    
+</div>
+
+<div class="col-md-4 col-md-offset-4">
+     <div class="panel panel-default">
+      
+    <div class="panel-body">
+        {form addForm, role=>"form"}
+
+            <fieldset>
+                <div class="form-group">
+                    {input name, class=>"form-control",placeholder=>"Jméno"}
+                </div>
+                <div class="form-group">
+                    {input surname, class=>"form-control",placeholder=>"Příjmení" }
+                </div>
+                <div class="form-group">
+                    {input password, class=>"form-control",placeholder=>"Heslo" }
+                </div>
+                <div class="form-group">
+                    {input surname, class=>"form-control",placeholder=>"Příjmení" }
+                </div>
+                <div class="form-group">
+                    {input surname, class=>"form-control",placeholder=>"Příjmení" }
+                </div>
+
+                {*}{input ok, class=>"btn btn-lg btn-success btn-block"}{*}
+            </fieldset>
+
+        {/form}
+    </div>
+     </div>
+</div>
+{/block}
+
+

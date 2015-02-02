@@ -19,6 +19,8 @@ interface IPageDAO {
      */
     public function findAll();
    
+     public function findAllArray();
+   
     /**
      * Uloží a vrátí uloženou entitu
      * @param PageEntity $page

@@ -74,4 +74,8 @@ class PageMySQLMapper implements IPageMapper {
         }
     }
 
+    public function findAllArray() {
+        return (array)$this->database->table($this->tableName)->fetchAll();
+    }
+
 }

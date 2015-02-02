@@ -14,9 +14,8 @@ class HomepagePresenter extends BasePresenter
 
 	public function renderDefault()
 	{
-		$this->template->anyVariable = 'any value';
-                echo 'Front BASE';
-                die();
+		
+               
 	}
 
 }

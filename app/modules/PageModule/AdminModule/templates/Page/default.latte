@@ -1,17 +1,11 @@
-
 {block content}
-<div id="banner">
-	<h1 n:block=title>Stránky</h1>
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Stránky</h1>
+    </div>
 </div>
-{foreach $pages as $p}
-    <a href="{link detail $p->getId()}">{$p->getId()}</a>
-    {$p->getId()} <br>
-    {$p->getName()} <br>
-    {$p->getLink()} <br>
-    <br>
-    
-{/foreach}
-Toto je admin page modulu
+{control grid}
+
 {/block}
 
 

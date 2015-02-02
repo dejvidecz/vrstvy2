@@ -24,6 +24,8 @@ nette:
 		expiration: 14 days
 
 services:
-	- App\Model\UserManager
+	- App\AdminModule\Model\Service\UserService(@Nette\Database\Context)
+	- App\AdminModule\Model\Service\MenuService(@Nette\Database\Context)
+	- App\FrontModule\Model\Service\MenuService(@Nette\Database\Context)
 	- App\PageModule\Model\service\PageService(@Nette\Database\Context)
 	router: App\RouterFactory::createRouter
